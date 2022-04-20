@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
 import { useState } from 'react';
 import Axios from 'axios'; 
 
+
 export default function App() {
 
   const [name, setName] = useState("");
@@ -82,7 +83,7 @@ export default function App() {
         onPress={addEmployee}
         title='submit'
         style={styles.button}>
-        <Text style={styles.pressabletext}>submit</Text>
+        <Text style={styles.pressabletext}>SUBMIT ITEM</Text>
       </Pressable>
     </View>
   );
@@ -96,41 +97,42 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: '#eee',
     padding: 5,
-    fontSize: 18,
+    fontSize: 15,
     borderRadius: 6,
-    marginVertical: 10,
+    marginVertical: 3,
     color: 'white',
     width: 150,
     textAlign: 'center',
   },
   textinput: {
-    borderWidth: 2,
+    borderWidth: 1,
     borderColor: '#eee',
-    padding: 5,
-    fontSize: 18,
+    padding: 2,
+    fontSize: 15,
     borderRadius: 6,
-    marginVertical: 10,
+    marginVertical: 3,
     color: 'white',
     width: 150,
     textAlign: 'center',
   },
   button: {
-    marginTop: 50,
-    backgroundColor: '#000',
-    borderWidth: 2,
+    marginTop: 15,
+    backgroundColor: 'grey',
+    borderWidth: 1,
     borderColor: '#eee',
     padding: 5,
-    fontSize: 18,
+    fontSize: 15,
     borderRadius: 6,
     marginVertical: 10,
     width: 200,
   },
   pressabletext: {
     color: '#eee',
-    fontSize: 25,
+    fontSize: 20,
     textAlign: 'center',
+    fontWeight: 'bold',
   },
 });
