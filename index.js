@@ -27,7 +27,7 @@ app.post('/create', (req, res) => {
     [name, age, country, position, wage],
     (err, result) => {
       if (err) {
-        console.log(err)
+        console.log(err);
       }
       else {
         res.send('customer with values are inserted, your customer is now located in the database and on port 19007/customers!');
