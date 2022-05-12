@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
 import { useState } from 'react';
 import Axios from 'axios';
-import '../css/app.css'
 
 export default function Customers() {
 
@@ -195,77 +194,82 @@ export default function Customers() {
                 <Text style={styles.pressabletext}>VIEW CUSTOMERS</Text>
             </Pressable>
 
-            <div className='test'>
+            <View>
 
                 {employeeList.map((val, key) => {
                     return (
-                        <div className='test'>
-                            <div className='text'>
+                        <View style={styles.row}>
+                            <View className='text'>
                                 <Text>Name: </Text>
                                 {val.name}
                                 <TextInput
                                     style={styles.textinput}
                                     type="text"
                                     placeholder=""
-                                    placeholderTextColor={'white'}
+                                    placeholderTextColor={'black'}
                                     onChange={(event) => {
                                         setNewName(event.target.value);
                                     }}
+                                    defaultValue={val.name}
                                 />
-                            </div>
-                            <div>
-                                <Text>Age: </Text>
+                            </View>
+                            <View>
+                                <Text style={styles.margintop}>Age: </Text>
                                 {val.age}
                                 <TextInput
                                     width='150'
                                     style={styles.textinput}
                                     type="text"
                                     placeholder=""
-                                    placeholderTextColor={'white'}
+                                    placeholderTextColor={'black'}
                                     onChange={(event) => {
                                         setNewAge(event.target.value);
                                     }}
+                                    defaultValue={val.age}
                                 />
-                            </div>
-                            <div>
-                                <Text>Country: </Text>
+                            </View>
+                            <View>
+                                <Text style={styles.margintop}>Country: </Text>
                                 {val.country}
                                 <TextInput
                                     style={styles.textinput}
                                     type="text"
                                     placeholder=""
-                                    placeholderTextColor={'white'}
+                                    placeholderTextColor={'black'}
                                     onChange={(event) => {
                                         setNewCountry(event.target.value);
                                     }}
+                                    defaultValue={val.country}
                                 />
-                            </div>
-                            <div>
-                                <Text>Position: </Text>
+                            </View>
+                            <View>
+                                <Text style={styles.margintop}>Position: </Text>
                                 {val.position}
                                 <TextInput
                                     style={styles.textinput}
                                     type="text"
                                     placeholder=""
-                                    placeholderTextColor={'white'}
+                                    placeholderTextColor={'black'}
                                     onChange={(event) => {
                                         setNewPosition(event.target.value);
                                     }}
+                                    defaultValue={val.position}
                                 />
-                            </div>
-                            <div>
-                                <Text>Wage: </Text>
+                            </View>
+                            <View>
+                                <Text style={styles.margintop}>Wage: </Text>
                                 {val.wage}
                                 <TextInput
                                     style={styles.textinput}
                                     placeholder=""
-                                    placeholderTextColor={'white'}
+                                    placeholderTextColor={'black'}
                                     onChange={(event) => {
                                         setNewWage(event.target.value);
                                     }}
+                                    defaultValue={val.wage}
                                 />
-                            </div>
-                            <div>
+                            </View>
+                            <View>
                                 <Pressable
                                     style={styles.fontwhite}
 
@@ -278,7 +282,7 @@ export default function Customers() {
                                 </Pressable>
 
                                 <Pressable
-                                    style={styles.fontwhite}
+                                    style={styles.fontwhitte}
                                     marginBottom={10}
                                     onPress={() => {
                                         deleteEmployee(val.id);
@@ -286,11 +290,11 @@ export default function Customers() {
                                 >
                                     <Text>Delete Customer </Text>
                                 </Pressable>
-                            </div>
-                        </div>
+                            </View>
+                        </View>
                     );
                 })}
-            </div>
+            </View>
         </View >
     );
 };
@@ -300,7 +304,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'grey',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
     },
     text: {
         borderWidth: 1,
@@ -320,7 +324,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         borderRadius: 6,
         marginVertical: 3,
-        color: 'white',
+        color: 'black',
         width: 150,
         textAlign: 'center',
     },
@@ -334,6 +338,7 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         marginVertical: 10,
         width: 200,
+        marginBottom: 20,
     },
     pressabletext: {
         color: '#eee',
@@ -353,9 +358,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     fontwhite: {
-        color: 'white'
+        color: 'white',
+        fontWeight: 'bold',
+    },
+    fontwhitte: {
+        color: 'white',
+        marginBottom: 20,
     },
     marginbot: {
-        marginBottom: 10,
-    }
+    },
+    margintop: {
+    },
+    row: {
+       flexDirection: 'row',
+    },
 });
