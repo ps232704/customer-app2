@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textinput: {
-    borderWidth: 1,
+    borderWidth: 1, 
     borderColor: '#eee',
     padding: 2,
     fontSize: 15,
@@ -172,7 +172,6 @@ const styles = StyleSheet.create({
   },
   customer: {
     width: 700,
-    border: 1,
     margin: 10,
     display: 'flex',
     padding: 10,
