@@ -1,5 +1,5 @@
 # customer-app2
-npm packages need to be installed for the porject. if you don't the project will not function and it will gave you many errors!
+npm packages need to be installed for the project. if you don't install all the npm packages it will not function and it will give you many errors!
 
 # npm packages
 
