@@ -200,6 +200,10 @@ export default function Customers() {
                     return (
                         <View style={styles.row}>
                             <View className='text'>
+                                <Text>ID: </Text>
+                                {val.id}
+                                </View>
+                            <View className='text'>
                                 <Text>Name: </Text>
                                 {val.name}
                                 <TextInput
@@ -370,6 +374,6 @@ const styles = StyleSheet.create({
     margintop: {
     },
     row: {
-       flexDirection: 'row',
+        flexDirection: 'row',
     },
 });
