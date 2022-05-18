@@ -5,7 +5,7 @@
 
 | Full npm package name | Package  | Version | How to install |
 | ------------- | ------------- | ------------- | ------------- |
-| @babel/core@7.17.9  @babel/core  | 7.17.9  | auto installed |
+| @babel/core@7.17.9 | 7.17.9  | auto installed |
 | axios@0.26.1 | axios  | 0.26.1  | npm install axios@0.26.1 |
 | cors@2.8.5 | cors  | 2.8.5  | npm install cors@2.8.5 |
 | expo-status-bar@1.2.0 | expo-status-bar  | 1.2.0  | auto installed |
