@@ -1,6 +1,4 @@
 # customer-app2
-npm list need to be correct before using the app
-npm list == extra-info/npmlist
 
 # npm packages
 @babel/core@7.17.9 |
