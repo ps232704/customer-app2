@@ -16,7 +16,8 @@ If you want to start the project follow these steps:
 
 # npm packages
 
-the commands to install a npm package need to be typed in the terminal in vsc. you can open the terminal by ctrl+j.
+The commands to install a npm package need to be typed in the terminal in vsc. you can open the terminal by ctrl+j.
+you can see all your npm packages by entering **"npm list"** in the terminal.
 
 | Full npm package name | Package  | Version | How to install |
 | :------------- | :------------- | :------------- | :------------- |
