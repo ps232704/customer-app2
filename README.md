@@ -1,7 +1,7 @@
 # customer-app2
 npm packages need to be installed for the project. if you don't install all the npm packages it will not function and it will give you many errors!
 
-If you want to start the project open 2 terminals in vsc. 
+If you want to start the project open 2 terminals in vsc (ctrl+j en dan ctrl+shift+5 om de terminal te splitten in 2). 
 - Typ in one of them "node index.js". This will start the index.js code. If you done this there will be an automatic respone that says "databse is connected succesfully on port 19007!!!!!!"
 - Typ in the second one "expo start". This will start the whole project. You can now press w to open the project in a new chrome tab!
 
