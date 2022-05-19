@@ -5,6 +5,9 @@ If you want to start the project follow these steps:
 - Open your commandprompt in windows. now find a file you want to create a new folder in. you can do that by "cd 'filename'". if you want to get out of a folder enter "cd..".
 - Now enter "expo init 'testapp'" this will make the app.
 - You can now go to the file on the commandprompt with "cd testapp" or however you called your project of course. and typ "code .". this will open visual studio code. the editor you are using to enter the code.
+- Open wamp. and then open your database mysql (probably http://localhost/phpmyadmin/).
+- make a new database and make a table (call it customer if you want to). make 6 columns for the customer.
+- the first one will be the id this needs to be a key so that it will be always different. the second one will be the name this needs to be a varchar. the third one needs to be the age this needs to be a int, because it is a number. the fourth one is for the country and it is a varchar. The fifth one is also a varchar, this one is for the position of the customer. The last one is the wage of the customer, this needs to be an int just like the age, because it is a number.
 - What you want to do now is to add the code in the app.
 - Open 2 terminals in vsc (ctrl+j and ctrl+shift+5 to split the terminal in 2). 
 - Typ in one of them "node index.js". This will start the index.js code. If you done this there will be an automatic respone that says "databse is connected succesfully on port 19007!!!!!!"
