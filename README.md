@@ -1,7 +1,12 @@
 # customer-app2
 npm packages need to be installed for the project. if you don't install all the npm packages it will not function and it will give you many errors!
 
-If you want to start the project open 2 terminals in vsc (ctrl+j en dan ctrl+shift+5 om de terminal te splitten in 2). 
+If you want to start the project follow these steps:
+- Open your commandprompt in windows. now find a file you want to create a new folder in. you can do that by "cd 'filename'". if you want to get out of a folder enter "cd..".
+- Now enter "expo init 'testapp'" this will make the app.
+- You can now go to the file on the commandprompt with cd testapp. and typ "code .". this will open visual studio code. the editor you are using to enter the code.
+- What you want to do now is to add the code in the app.
+- Open 2 terminals in vsc (ctrl+j and ctrl+shift+5 to split the terminal in 2). 
 - Typ in one of them "node index.js". This will start the index.js code. If you done this there will be an automatic respone that says "databse is connected succesfully on port 19007!!!!!!"
 - Typ in the second one "expo start". This will start the whole project. You can now press w to open the project in a new chrome tab!
 
