@@ -1,5 +1,5 @@
 # customer-app2
-npm packages need to be installed for the project. if you don't install all the npm packages it will not function and it will give you many errors!
+npm packages need to be installed for the project. if you don't install all the npm packages it will not function and it will give you many errors! if some npm packages give errors while downloading ctrl c and "yarn add 'npm package-name'".
 
 If you want to start the project follow these steps:
 - Open your commandprompt in windows. now find a file you want to create a new folder in. you can do that by "cd 'filename'". if you want to get out of a folder enter "cd..".
