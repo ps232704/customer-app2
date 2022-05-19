@@ -19,7 +19,7 @@ If you want to start the project follow these steps:
 the commands to install a npm package need to be typed in the terminal in vsc. you can open the terminal by ctrl+j.
 
 | Full npm package name | Package  | Version | How to install |
-| ------------- | ------------- | ------------- | ------------- |
+| :------------- | :------------- | :------------- | :------------- |
 | @babel/core@7.17.9 |  @babel/core | 7.17.9  | auto installed (already installed if you make a new project)|
 | axios@0.26.1 | axios  | 0.26.1  | npm install axios@0.26.1 |
 | cors@2.8.5 | cors  | 2.8.5  | npm install cors@2.8.5 |
